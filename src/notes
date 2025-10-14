@@ -1,0 +1,18 @@
+Discussion:
+----------
+1.  I have been setting goalposts and programming towards it on my own, is neces-
+    sary that I discuss with Suhas. 
+    --> Lay him out the implementation plans and ask if the goals are useful for
+    --> 
+
+//----------------------------------------------------------------------------\\
+
+To implement:
+------------
+0. Finish foundational setup fns
+    --> Reactor initialization
+        --> Test against Cantera
+    --> 
+
+1. Finish IdealGasConstPressureAdiabaticReactor and IdealGasConstVolumeAdiabaticReactor
+    --> Test against Cantera
