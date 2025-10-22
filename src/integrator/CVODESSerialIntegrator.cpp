@@ -321,7 +321,7 @@ void CVODESSerialIntegrator::integrate()
         flag = CVode(cvode_mem_, tout, y_, &time_, CV_NORMAL);
         /* flag = CVode(cvode_mem_, tout, y_, &time_, CV_ONE_STEP); */
         /* PrintOutput(time_, NV_Ith_S(y_, 0), NV_Ith_S(y_, 1), NV_Ith_S(y_, 2)); */
-        PrintAllOutput(time_, y_, NEQ_);
+        //PrintAllOutput(time_, y_, NEQ_);
 
         if(check_retval(&flag, "CVode", 1)) 
         {
@@ -345,7 +345,7 @@ void CVODESSerialIntegrator::integrate()
     }
     fclose(FID_);
 
-    if(debug_ == 0)
+    if(debug_ == 1)
     {
         printf("\nFinal Statistics:\n");
         flag = CVodePrintAllStats(cvode_mem_, stdout, SUN_OUTPUTFORMAT_TABLE);

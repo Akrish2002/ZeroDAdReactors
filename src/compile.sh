@@ -7,7 +7,7 @@ integrator="./integrator"
 adapters="./include/adapters"
 chem_config="./."
 
-chemgen="$HOME/abhijeet/05_chemgen/draft_1/src"
+chemgen="$HOME/abhijeet/05.01_chemgen/draft_1/src"
 
 sundials_include="$HOME/abhijeet/10_CVODES/sundials/include"
 sundials_build_include="$HOME/abhijeet/10_CVODES/sundials_build_dir/include"

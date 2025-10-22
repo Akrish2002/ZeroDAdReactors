@@ -83,7 +83,8 @@ void IdealGasConstPressureAdiabaticReactor::getdTtDenominator()
 
 int IdealGasConstPressureAdiabaticReactor::setNEQ()
 {
-    return(n_species_ + 1);
+    //return(n_species_ + 1);
+    return(n_species_);
 }
 
 
@@ -233,7 +234,7 @@ void IdealGasConstPressureAdiabaticReactor::computeThermoProperties()
 
 void IdealGasConstPressureAdiabaticReactor::computeProductionRates()
 {
-    omega_ = source(C_, T_);
+    omega_ = source_species(C_, T_);
 }
 
 
